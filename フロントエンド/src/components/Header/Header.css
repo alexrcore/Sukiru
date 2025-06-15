@@ -4,7 +4,7 @@
 }
 
 .header-title {
-    color: var(--color-text);
+  color: var(--color-text);
   font-size: var(--font-size-xl);
   margin-bottom: 0.5rem;
 }

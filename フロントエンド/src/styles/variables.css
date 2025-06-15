@@ -11,14 +11,14 @@
   --light-purple: #a78bfa;
 
   --color-bg: #f4f4fa;
-  --color-text: #1c1226de;
+  --color-text: #1c1226;
   --color-subtext: #5c5c6c;
 
   --color-card-bg: #ffffff;
   --color-border: #dedede;
   --color-hover: #3b2c56;
   --color-nav-underline: var(--dark-purple);
-  
+
   --color-button-bg: #a78bfa;
   --color-button-text: #ffffff;
   --color-button-bg-disabled: #3b2c56;
@@ -50,7 +50,7 @@
   --color-border: #2e2e3e;
   --color-hover: #c9b7f8;
   --color-nav-underline: var(--light-purple);
-  
+
   --color-button-bg: #5a41a0;
   --color-button-text: #e3d6f8;
   --color-button-bg-disabled: #5c5c6c;

@@ -1,0 +1,25 @@
+.main-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-layout-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
