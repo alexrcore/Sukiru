@@ -1,1 +1,7 @@
-node_modules
+# Directories
+**/node_modules/
+
+# File types
+**/.env*
+
+# Files
