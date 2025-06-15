@@ -1,0 +1,45 @@
+name: Code Quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.16.0
+          cache: 'npm'
+
+      - name: 📦 Install root deps
+        run: npm ci
+
+      - name: 🧹 Run Prettier
+        run: npx prettier . --check
+
+      - name: 📦 Install frontend deps
+        working-directory: フロントエンド
+        run: npm ci
+
+      - name: 🧠 Run ESLint
+        working-directory: フロントエンド
+        run: npx eslint .
+
+      - name: 📦 Install backend deps
+        working-directory: バックエンド
+        run: npm ci
+
+      - name: 🧠 Run ESLint
+        working-directory: バックエンド
+        run: npx eslint .
+
+      - name: 🧪 Type check
+        working-directory: バックエンド
+        run: npx tsc --noEmit
