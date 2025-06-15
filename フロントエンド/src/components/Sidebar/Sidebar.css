@@ -1,0 +1,10 @@
+.sidebar-filler {
+  width: 220px;
+  background: var(--color-card-bg);
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}

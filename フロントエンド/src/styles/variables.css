@@ -1,0 +1,71 @@
+:root {
+  --font-primary: 'Work Sans', sans-serif;
+  --font-size-xl: 3rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.25rem;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+
+  --dark-purple: #5a41a0;
+  --bright-purple: #7c3aed;
+  --light-purple: #a78bfa;
+
+  --color-bg: #f4f4fa;
+  --color-text: #1c1226;
+  --color-subtext: #5c5c6c;
+
+  --color-card-bg: #ffffff;
+  --color-border: #dedede;
+  --color-hover: #3b2c56;
+  --color-nav-underline: var(--dark-purple);
+
+  --color-button-bg: #a78bfa;
+  --color-button-text: #ffffff;
+  --color-button-bg-disabled: #3b2c56;
+
+  --color-scrollbar-thumb: #a78bfa;
+  --color-scrollbar-bg: #ffffff;
+  --color-scrollbar-thumb-border: #ffffff;
+  --color-scrollbar-thumb-hover: #5a41a0;
+
+  --color-selection: #5a41a0;
+  --color-selection-text: #ffffff;
+
+  --toast-success-bg: linear-gradient(90deg, #a7f3d0 0%, #6ee7b7 100%);
+  --toast-success-text: #065f46;
+  --toast-error-bg: linear-gradient(90deg, #fca5a5 0%, #f87171 100%);
+  --toast-error-text: #7f1d1d;
+  --toast-info-bg: linear-gradient(90deg, #c7d2fe 0%, #a5b4fc 100%);
+  --toast-info-text: #3730a3;
+  --toast-warning-bg: linear-gradient(90deg, #fde68a 0%, #fbbf24 100%);
+  --toast-warning-text: #92400e;
+}
+
+[data-theme='dark'] {
+  --color-bg: #0e0e12;
+  --color-text: #e3d6f8;
+  --color-subtext: #b1a7bd;
+
+  --color-card-bg: #1a1a22;
+  --color-border: #2e2e3e;
+  --color-hover: #c9b7f8;
+  --color-nav-underline: var(--light-purple);
+
+  --color-button-bg: #5a41a0;
+  --color-button-text: #e3d6f8;
+  --color-button-bg-disabled: #5c5c6c;
+
+  --color-scrollbar-thumb: #5a41a0;
+  --color-scrollbar-thumb-hover: #a78bfa;
+
+  --color-selection: #a78bfa;
+
+  --toast-success-bg: linear-gradient(90deg, #134e4a 0%, #065f46 100%);
+  --toast-success-text: #a7f3d0;
+  --toast-error-bg: linear-gradient(90deg, #7f1d1d 0%, #f87171 100%);
+  --toast-error-text: #fca5a5;
+  --toast-info-bg: linear-gradient(90deg, #3730a3 0%, #a5b4fc 100%);
+  --toast-info-text: #c7d2fe;
+  --toast-warning-bg: linear-gradient(90deg, #92400e 0%, #fde68a 100%);
+  --toast-warning-text: #fde68a;
+}
