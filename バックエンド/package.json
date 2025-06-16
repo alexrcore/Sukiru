@@ -13,6 +13,7 @@
     "@eslint/js": "^9.29.0",
     "@eslint/json": "^0.12.0",
     "@eslint/markdown": "^6.5.0",
+    "@types/express": "^5.0.3",
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
     "eslint": "^9.29.0",
@@ -20,5 +21,9 @@
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.34.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
   }
 }

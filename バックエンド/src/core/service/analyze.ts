@@ -1,6 +1,6 @@
-import { roles } from '@/data/roles.ts'
+import { roles } from '@/core/data/roles.ts'
 import { Role } from '@/core/domain/role.ts'
-import { isSkill, skills } from '@/data/skills.ts'
+import { isSkill, skills } from '@/core/data/skills.ts'
 
 type Input = {
   skills: string[]
