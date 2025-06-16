@@ -1,13 +1,13 @@
 import { roles } from '@/data/roles.ts'
 import { Role } from '@/core/domain/role.ts'
-import { skillRegistry } from '@/data/skills.ts'
+import { isSkill, skills } from '@/data/skills.ts'
 
 type Input = {
   skills: string[]
 }
 
 type Output = {
-  suggestions: {
+  matches: {
     label: string
     fit: number
     missings: string[]
@@ -15,17 +15,17 @@ type Output = {
 }
 
 export function analyze(input: Input): Output {
-  const condidates: Role[] = roles.map(role => role.clone())
+  const condidates: Role[] = roles()
 
   input.skills.forEach(skill => {
-    if (!skillRegistry.has(skill)) {
-      throw new Error(`Invalid skill: ${skill}`)
+    if (!isSkill(skill)) {
+      throw new Error(`Invalid skill: ${skill}!`)
     }
 
     condidates.forEach(condidate => {
-      condidate.addQualification(skillRegistry.get(skill))
+      condidate.addQualification(skills[skill])
     })
   })
 
-  return { suggestions: Array.from(condidates).map(condidate => condidate.getObject()) }
+  return { matches: condidates.map(condidate => condidate.getObject()).sort((a, b) => b.fit - a.fit) }
 }

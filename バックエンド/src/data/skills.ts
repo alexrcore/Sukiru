@@ -1,6 +1,8 @@
 import { Skill } from '@/core/domain/skill.ts'
 
-const skillNames = [
+type SkillKey = (typeof values)[number]
+
+const values = [
   'HTML',
   'CSS',
   'Javascript',
@@ -18,12 +20,5 @@ const skillNames = [
   'Google_Cloud',
 ] as const
 
-type SkillKey = (typeof skillNames)[number]
-
-export const skills: Record<SkillKey, Skill> = Object.fromEntries(skillNames.map(key => [key, new Skill(key)])) as Record<SkillKey, Skill>
-
-export const skillRegistry = {
-  all: skills,
-  get: (key: SkillKey) => skills[key],
-  has: (key: string): key is SkillKey => key in skills,
-}
+export const skills = Object.fromEntries(values.map(key => [key, new Skill(key)])) as Record<SkillKey, Skill>
+export const isSkill = (key: string): key is SkillKey => key in skills

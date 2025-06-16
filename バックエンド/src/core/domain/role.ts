@@ -1,25 +1,20 @@
 import { Skill } from '@/core/domain/skill.ts'
+import { countRequirements } from '@/data/roles.ts'
 
 export class Role {
-  private label: string
-  private fit: number
-  private missings: Set<Skill>
-  private total: number
+  public readonly label: string
+  public readonly requirements: Set<Skill>
 
-  constructor(label: string, requirements: Set<Skill>) {
+  private fit: number = 0
+
+  constructor(label: string, requirements: Skill[] | Set<Skill>) {
     this.label = label
-    this.fit = 0
-    this.missings = requirements
-    this.total = requirements.size
-  }
-
-  public clone() {
-    return new Role(this.label, new Set(this.missings))
+    this.requirements = new Set<Skill>(requirements)
   }
 
   public addQualification(skill: Skill) {
-    if (this.missings.has(skill)) {
-      this.missings.delete(skill)
+    if (this.requirements.has(skill)) {
+      this.requirements.delete(skill)
       this.fit++
     }
   }
@@ -27,8 +22,8 @@ export class Role {
   public getObject() {
     return {
       label: this.label,
-      fit: Number(((this.fit / this.total) * 100).toFixed(2)),
-      missings: Array.from(this.missings).map(skill => skill.getName),
+      fit: Math.round((this.fit / countRequirements(this.label)) * 100),
+      missings: Array.from(this.requirements).map(skill => skill.name),
     }
   }
 }
