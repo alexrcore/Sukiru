@@ -1,0 +1,32 @@
+.skill-tag {
+  padding: 0.5rem 1rem;
+  border: 2px dashed var(--color-border);
+  border-radius: 12px;
+  background: transparent;
+  font-size: 1rem;
+  margin: 0.4rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+}
+
+.skill-tag:hover {
+  scale: 1.1;
+}
+
+.skill-tag:active {
+  scale: 0.95;
+}
+
+.skill-active {
+  border-style: solid;
+}
+
+.skill-missing {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
