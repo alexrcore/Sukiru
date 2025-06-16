@@ -24,6 +24,7 @@ button {
 
 .skill-active {
   border-style: solid;
+  border-color: var(--bright-purple);
 }
 
 .skill-missing {
