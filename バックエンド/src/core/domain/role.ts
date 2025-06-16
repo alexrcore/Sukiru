@@ -1,5 +1,5 @@
 import { Skill } from '@/core/domain/skill.ts'
-import { countRequirements } from '@/data/roles.ts'
+import { countRequirements } from '@/core/data/roles.ts'
 
 export class Role {
   public readonly label: string
