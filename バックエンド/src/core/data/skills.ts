@@ -2,7 +2,7 @@ import { Skill } from '@/core/domain/skill.ts'
 
 type SkillKey = (typeof values)[number]
 
-const values = [
+export const values = [
   // Programming languages
   'JavaScript',
   'Python',
