@@ -1,0 +1,12 @@
+# Directories
+
+node_modules/
+test/
+
+# File types
+
+.env
+
+# Files
+
+README.md
