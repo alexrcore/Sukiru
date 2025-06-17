@@ -40,6 +40,10 @@ jobs:
         working-directory: バックエンド
         run: npx eslint .
 
-      - name: 🧪 Type check
+      - name: 🔍 Type check
         working-directory: バックエンド
         run: npx tsc --noEmit
+
+      - name: 🧪 Run Tests
+        working-directory: バックエンド
+        run: npx vitest run --update false
