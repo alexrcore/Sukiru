@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Sidebar from '../../components/Sidebar/Sidebar'
-import SkillGrid from '../../components/SkillGrid/SkillGrid'
+import SkillSection from '../../components/SkillSection/SkillSection'
 import './MainLayout.css'
 
 const ALL_SKILLS = [
@@ -38,11 +38,14 @@ const ALL_SKILLS = [
 ]
 
 const MainLayout = () => {
-  const [selectedSkills, setSelectedSkills] = useState('')
+  const [selectedSkills, setSelectedSkills] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
 
   const toggleSkill = skill => {
     setSelectedSkills(prev => (prev.includes(skill) ? prev.filter(s => s !== skill) : [...prev, skill]))
   }
+
+  const filteredSkills = ALL_SKILLS.filter(skill => skill.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
     <div className="main-layout">
@@ -50,9 +53,13 @@ const MainLayout = () => {
       <div className="main-layout-body">
         <Header />
         <main className="main-content">
-          <div>
-            <SkillGrid skills={ALL_SKILLS} selectedSkills={selectedSkills} onToggleSkill={toggleSkill} />
-          </div>
+          <SkillSection
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            skills={filteredSkills}
+            selectedSkills={selectedSkills}
+            onToggleSkill={toggleSkill}
+          />
         </main>
         <Footer />
       </div>
