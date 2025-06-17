@@ -1,5 +1,5 @@
-.sidebar-filler {
-  width: 220px;
+.sidebar {
+  width: 400px;
   background: var(--color-card-bg);
   min-height: 100vh;
   padding: 1rem;
