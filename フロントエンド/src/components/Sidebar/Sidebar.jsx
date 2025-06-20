@@ -6,7 +6,7 @@ const Sidebar = ({ selectedSkills, toggleSkill }) => {
   return (
     <div className="sidebar">
       <SidebarSkillSet selectedSkills={selectedSkills} onToggleSkill={toggleSkill} />
-        <JobList />
+      <JobList />
     </div>
   )
 }
