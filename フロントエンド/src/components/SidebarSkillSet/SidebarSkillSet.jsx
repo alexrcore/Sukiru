@@ -1,4 +1,5 @@
 import SkillGrid from '../SkillGrid/SkillGrid'
+import './SidebarSkillSet.css'
 
 const SidebarSkillSet = ({ selectedSkills, onToggleSkill }) => {
   return (
