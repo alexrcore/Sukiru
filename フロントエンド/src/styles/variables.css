@@ -31,6 +31,9 @@
   --color-selection: #a78bfa;
   --color-selection-text: #ffffff;
 
+  --color-progress-bar-bg: #2e2e30;
+  --color-progress-bar-fill: #7c3aed;
+
   --toast-success-bg: linear-gradient(90deg, #134e4a 0%, #065f46 100%);
   --toast-success-text: #a7f3d0;
   --toast-error-bg: linear-gradient(90deg, #7f1d1d 0%, #f87171 100%);
