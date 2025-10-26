@@ -5,7 +5,7 @@ import { ServerOptions } from '@/config/options.ts'
 import { handleFailure } from '@/interface/middlewares/failure.ts'
 import { handle404 } from '@/interface/middlewares/404.ts'
 import { handleJSON } from '@/interface/middlewares/json.ts'
-import { getSkillsHandler } from '@/interface/handlers/skills.ts'
+import { getSkillsHandler } from '@/interface/handlers/tools.ts'
 
 export function bootstrap(options: ServerOptions) {
   const app = express()

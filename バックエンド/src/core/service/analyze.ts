@@ -1,32 +1,19 @@
-import { roles } from '@/core/data/roles.ts'
-import { Role } from '@/core/domain/role.ts'
-import { isSkill, skills } from '@/core/data/skills.ts'
+import { RolesList } from '@/core/data/roles.ts'
+import { RolesAnalysis } from '@/core/domain/role.ts'
 import { Failure } from '@/lib/errors.ts'
+import { isTool, Tools } from '@/core/data/tools.ts'
 
 type Input = {
-  skills: string[]
+  tools: string[]
 }
 
-type Output = {
-  matches: {
-    label: string
-    fit: number
-    missings: string[]
-  }[]
-}
-
-export function analyze(input: Input): Output {
-  const condidates: Role[] = roles()
-
-  input.skills.forEach(skill => {
-    if (!isSkill(skill)) {
-      throw new Failure(400, `Invalid skill: ${skill}!`)
+export function analyze(input: Input): RolesAnalysis[] {
+  const tools = input.tools.map(tool => {
+    if (!isTool(tool)) {
+      throw new Failure(400, `Invalid tool: ${tool}!`)
     }
-
-    condidates.forEach(condidate => {
-      condidate.addQualification(skills[skill])
-    })
+    return Tools[tool]
   })
 
-  return { matches: condidates.map(condidate => condidate.getObject()).sort((a, b) => b.fit - a.fit) }
+  return RolesList.map(role => role.analyze(tools))
 }

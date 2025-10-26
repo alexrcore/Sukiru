@@ -4,15 +4,15 @@ import { describe, it, expect } from 'vitest'
 
 describe('Analyze', () => {
   it('Valid inputs', () => {
-    const input = { skills: ['TypeScript', 'Express'] }
+    const input = { tools: ['TypeScript', 'Express'] }
     const output = analyze(input)
     expect(output).matchSnapshot()
   })
 
   it('Invalid inputs', () => {
-    const invalidSkill = 'X'
-    const input = { skills: ['TypeScript', 'Express', invalidSkill] }
+    const invalidTool = 'X'
+    const input = { tools: ['Go', 'Express', invalidTool] }
     expect(() => analyze(input)).toThrow(Failure)
-    expect(() => analyze(input)).toThrowError(`Invalid skill: ${invalidSkill}!`)
+    expect(() => analyze(input)).toThrowError(`Invalid tool: ${invalidTool}!`)
   })
 })

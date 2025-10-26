@@ -1,169 +1,1016 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Analyze > Valid inputs 1`] = `
-{
-  "matches": [
-    {
-      "fit": 5,
-      "label": "Senior Frontend",
-      "missings": [
-        "JavaScript",
-        "React",
-        "Next",
-        "React_Native",
-        "jQuery",
-        "PostgreSQL",
-        "MongoDB",
-        "Firebase",
-        "Docker",
-        "GitLab",
-        "Cloudflare",
-        "Github_Actions",
-        "Vercel",
-        "Heroku",
-        "Netlify",
-        "NGINX",
-        "Tailwind",
-        "ShadCN",
-        "Redux",
-        "Vite",
-        "Chakra_UI",
-        "Material_UI",
-        "Radix_UI",
-        "Emotion",
-        "SWR",
-        "JWTs",
-        "OAuth",
-        "Zod",
-        "Vitest",
-        "HTMX",
-        "HTTP",
-        "Websockets",
-        "WebRTC",
-        "OOP",
-        "MVC",
-        "SOLID",
-        "HTML",
-        "CSS",
-        "NodeJS",
-        "Git",
-        "Linux",
-      ],
-    },
-    {
-      "fit": 4,
-      "label": "Junior Backend",
-      "missings": [
-        "JavaScript",
-        "PostgreSQL",
-        "MongoDB",
-        "Firebase",
-        "Github_Actions",
-        "JWTs",
-        "OAuth",
-        "Prisma",
-        "Swagger",
-        "Zod",
-        "Jest",
-        "Vitest",
-        "HTTP",
-        "Websockets",
-        "OOP",
-        "MVC",
-        "RESTful",
-        "HTML",
-        "Git",
-        "NodeJS",
-        "SQL",
-        "Linux",
-      ],
-    },
-    {
-      "fit": 4,
-      "label": "Sunior Backend",
-      "missings": [
-        "JavaScript",
-        "Next",
-        "Nest",
-        "PostgreSQL",
-        "MySQL",
-        "SQL_Server",
-        "Redis",
-        "SQL",
-        "MongoDB",
-        "Firebase",
-        "Docker",
-        "AWS",
-        "Kubernetes",
-        "Jenkins",
-        "Terraform",
-        "Google_Cloud",
-        "Github_Actions",
-        "GitLab",
-        "NGINX",
-        "JWTs",
-        "OAuth",
-        "Auth0",
-        "Prisma",
-        "Swagger",
-        "Zod",
-        "Jest",
-        "Vitest",
-        "HTTP",
-        "Websockets",
-        "gRPC",
-        "Google_PubSub",
-        "GraphQL",
-        "WebRTC",
-        "SSE",
-        "FCM",
-        "OOP",
-        "DDD",
-        "Microservices",
-        "SOLID",
-        "MVC",
-        "RESTful",
-        "Hexagonal_Architecture",
-        "Event_Driven_Architecture",
-        "MCP",
-        "ACID",
-        "HTML",
-        "Git",
-        "NodeJS",
-        "Linux",
-      ],
-    },
-    {
-      "fit": 4,
-      "label": "Junior Frontend",
-      "missings": [
-        "JavaScript",
-        "React",
-        "PostgreSQL",
-        "MongoDB",
-        "Firebase",
-        "Github_Actions",
-        "Vercel",
-        "Heroku",
-        "Netlify",
-        "Tailwind",
-        "ShadCN",
-        "Material_UI",
-        "Redux",
-        "Vite",
-        "JWTs",
-        "OAuth",
-        "Zod",
-        "HTTP",
-        "Websockets",
-        "OOP",
-        "MVC",
-        "HTML",
-        "CSS",
-        "NodeJS",
-        "Git",
-      ],
-    },
-  ],
-}
+[
+  {
+    "analysis": [
+      {
+        "analysis": [
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 1,
+                  "done": true,
+                  "has": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Express",
+                    },
+                  ],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Laravel",
+                    },
+                    undefined,
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Django",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Go",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 2,
+            "name": "Backend_Framework",
+            "progress": 1,
+          },
+          {
+            "analysis": {
+              "essentials": [],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "React",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Frontend_Framework",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "PostgreSQL",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MySQL",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MongoDB",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "SQL",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Redis",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Database",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "CSS",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Tailwind",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "CSS",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTML",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "HTML",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTTP",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "GraphQL",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "WebSockets",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Protocol",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Git",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Docker",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "DevOps Tool",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Vercel",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "AWS",
+                    },
+                    undefined,
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Azure",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Cloud Platform",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MVC",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "DDD",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Architecture",
+            "progress": 0,
+          },
+        ],
+        "bonus": 2,
+        "name": "Junior",
+        "progress": 0.125,
+      },
+      {
+        "analysis": [
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 1,
+                  "done": true,
+                  "has": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Express",
+                    },
+                  ],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Laravel",
+                    },
+                    undefined,
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Django",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Go",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 2,
+            "name": "Backend_Framework",
+            "progress": 1,
+          },
+          {
+            "analysis": {
+              "essentials": [],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "React",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Frontend_Framework",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "PostgreSQL",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MySQL",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MongoDB",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "SQL",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Redis",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "Database",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "CSS",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Tailwind",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "CSS",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTML",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "HTML",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTTP",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "GraphQL",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "WebSockets",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "gRPC",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Protocol",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Git",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Docker",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Kubernetes",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "DevOps Tool",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Vercel",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "AWS",
+                    },
+                    undefined,
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Azure",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "Cloud Platform",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "MVC",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "DDD",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Microservices",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Architecture",
+            "progress": 0,
+          },
+        ],
+        "bonus": 2,
+        "name": "Intermediate",
+        "progress": 0.125,
+      },
+    ],
+    "name": "Backend Developer",
+  },
+  {
+    "analysis": [
+      {
+        "analysis": [
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "JavaScript",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 1,
+                  "done": true,
+                  "has": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "TypeScript",
+                    },
+                  ],
+                  "missing": [],
+                },
+              ],
+            },
+            "bonus": 1,
+            "name": "Programming Language",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "React",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Vue",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Next",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Frontend_Framework",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "CSS",
+                    },
+                  ],
+                },
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Tailwind",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "CSS",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTML",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "HTML",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "HTTP",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "WebSockets",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "GraphQL",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "Protocol",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Git",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "DevOps Tool",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Vercel",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [],
+            },
+            "bonus": 0,
+            "name": "Cloud Platform",
+            "progress": 0,
+          },
+          {
+            "analysis": {
+              "essentials": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "ShadCN",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Radix",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Bootstrap",
+                    },
+                  ],
+                },
+              ],
+              "optionals": [
+                {
+                  "bonus": 0,
+                  "done": false,
+                  "has": [],
+                  "missing": [
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "Framer",
+                    },
+                    Tool {
+                      "description": undefined,
+                      "logo": undefined,
+                      "name": "GSAP",
+                    },
+                  ],
+                },
+              ],
+            },
+            "bonus": 0,
+            "name": "UI_Library",
+            "progress": 0,
+          },
+        ],
+        "bonus": 1,
+        "name": "Junior",
+        "progress": 0,
+      },
+    ],
+    "name": "Frontend Developer",
+  },
+]
 `;

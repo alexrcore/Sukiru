@@ -1,193 +1,72 @@
-import { skills } from '@/core/data/skills.ts'
-import { Role } from '@/core/domain/role.ts'
+import { Area } from '../domain/area.ts'
+import { Category } from '../domain/category.ts'
+import { Level, LevelName } from '../domain/level.ts'
+import { Pool } from '../domain/pool.ts'
+import { Role } from '../domain/role.ts'
+import { Tools } from './tools.ts'
 
-const values = [
-  new Role('Junior Backend', [
-    skills.JavaScript,
+export const Roles = {
+  Backend_Developer: new Role('Backend Developer', [
+    new Level(LevelName.Junior, [
+      new Area(Category.Backend_Framework, [new Pool(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)], []),
 
-    skills.Express,
+      new Area(Category.Frontend_Framework, [], [new Pool(Tools.React)]),
 
-    skills.PostgreSQL,
-    skills.MongoDB,
-    skills.Firebase,
+      new Area(Category.Database, [new Pool(Tools.PostgreSQL, Tools.MySQL), new Pool(Tools.MongoDB), new Pool(Tools.SQL)], [new Pool(Tools.Redis)]),
 
-    skills.Github_Actions,
+      new Area(Category.CSS, [new Pool(Tools.CSS)], [new Pool(Tools.Tailwind)]),
 
-    skills.JWTs,
-    skills.OAuth,
-    skills.Prisma,
-    skills.Swagger,
-    skills.Zod,
-    skills.Jest,
-    skills.Vitest,
+      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
 
-    skills.HTTP,
-    skills.Websockets,
+      new Area(Category.Protocol, [new Pool(Tools.HTTP)], [new Pool(Tools.GraphQL), new Pool(Tools.WebSockets)]),
 
-    skills.OOP,
-    skills.MVC,
-    skills.RESTful,
+      new Area(Category.DevOps_Tool, [new Pool(Tools.Git)], [new Pool(Tools.Docker)]),
 
-    skills.HTML,
-    skills.Git,
-    skills.NodeJS,
-    skills.SQL,
-    skills.Linux,
+      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel)], [new Pool(Tools.AWS, Tools['Google Cloud'], Tools.Azure)]),
+
+      new Area(Category.Architecture, [new Pool(Tools.MVC)], [new Pool(Tools.DDD)]),
+    ]),
+
+    new Level(LevelName.Intermediate, [
+      new Area(Category.Backend_Framework, [new Pool(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)], []),
+
+      new Area(Category.Frontend_Framework, [], [new Pool(Tools.React)]),
+
+      new Area(Category.Database, [new Pool(Tools.PostgreSQL, Tools.MySQL), new Pool(Tools.MongoDB), new Pool(Tools.SQL), new Pool(Tools.Redis)], []),
+
+      new Area(Category.CSS, [new Pool(Tools.CSS)], [new Pool(Tools.Tailwind)]),
+
+      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
+
+      new Area(Category.Protocol, [new Pool(Tools.HTTP), new Pool(Tools.GraphQL), new Pool(Tools.WebSockets)], [new Pool(Tools.gRPC)]),
+
+      new Area(Category.DevOps_Tool, [new Pool(Tools.Git), new Pool(Tools.Docker)], [new Pool(Tools.Kubernetes)]),
+
+      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel), new Pool(Tools.AWS, Tools['Google Cloud'], Tools.Azure)], []),
+
+      new Area(Category.Architecture, [new Pool(Tools.MVC), new Pool(Tools.DDD)], [new Pool(Tools.Microservices)]),
+    ]),
   ]),
 
-  new Role('Sunior Backend', [
-    skills.JavaScript,
-    skills.TypeScript,
+  Frontend_Developer: new Role('Frontend Developer', [
+    new Level(LevelName.Junior, [
+      new Area(Category.Programming_Language, [new Pool(Tools.JavaScript)], [new Pool(Tools.TypeScript)]),
 
-    skills.Express,
-    skills.Next,
-    skills.Nest,
+      new Area(Category.Frontend_Framework, [new Pool(Tools.React)], [new Pool(Tools.Vue, Tools.Next)]),
 
-    skills.PostgreSQL,
-    skills.MySQL,
-    skills.SQL_Server,
-    skills.Redis,
-    skills.SQL,
-    skills.MongoDB,
-    skills.Firebase,
+      new Area(Category.CSS, [new Pool(Tools.CSS), new Pool(Tools.Tailwind)], []),
 
-    skills.Docker,
-    skills.AWS,
-    skills.Kubernetes,
-    skills.Jenkins,
-    skills.Terraform,
-    skills.Google_Cloud,
-    skills.Github_Actions,
-    skills.GitLab,
-    skills.NGINX,
+      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
 
-    skills.JWTs,
-    skills.OAuth,
-    skills.Auth0,
-    skills.Prisma,
-    skills.Swagger,
-    skills.Zod,
-    skills.Jest,
-    skills.Vitest,
+      new Area(Category.Protocol, [new Pool(Tools.HTTP)], [new Pool(Tools.WebSockets, Tools.GraphQL)]),
 
-    skills.HTTP,
-    skills.Websockets,
-    skills.gRPC,
-    skills.Google_PubSub,
-    skills.GraphQL,
-    skills.WebRTC,
-    skills.SSE,
-    skills.FCM,
+      new Area(Category.DevOps_Tool, [new Pool(Tools.Git)], []),
 
-    skills.OOP,
-    skills.DDD,
-    skills.Microservices,
-    skills.SOLID,
-    skills.MVC,
-    skills.RESTful,
-    skills.Hexagonal_Architecture,
-    skills.Event_Driven_Architecture,
-    skills.MCP,
-    skills.ACID,
+      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel)], []),
 
-    skills.HTML,
-    skills.Git,
-    skills.NodeJS,
-    skills.SQL,
-    skills.Linux,
+      new Area(Category.UI_Library, [new Pool(Tools.ShadCN, Tools.Radix, Tools.Bootstrap)], [new Pool(Tools.Framer, Tools.GSAP)]),
+    ]),
   ]),
+}
 
-  new Role('Junior Frontend', [
-    skills.JavaScript,
-
-    skills.React,
-    skills.Express,
-
-    skills.PostgreSQL,
-    skills.MongoDB,
-    skills.Firebase,
-
-    skills.Github_Actions,
-    skills.Vercel,
-    skills.Heroku,
-    skills.Netlify,
-
-    skills.Tailwind,
-    skills.ShadCN,
-    skills.Material_UI,
-    skills.Redux,
-    skills.Vite,
-
-    skills.JWTs,
-    skills.OAuth,
-    skills.Zod,
-
-    skills.HTTP,
-    skills.Websockets,
-
-    skills.OOP,
-    skills.MVC,
-
-    skills.HTML,
-    skills.CSS,
-    skills.NodeJS,
-    skills.Git,
-  ]),
-
-  new Role('Senior Frontend', [
-    skills.JavaScript,
-    skills.TypeScript,
-
-    skills.React,
-    skills.Express,
-    skills.Next,
-    skills.React_Native,
-    skills.jQuery,
-
-    skills.PostgreSQL,
-    skills.MongoDB,
-    skills.Firebase,
-
-    skills.Docker,
-    skills.GitLab,
-    skills.Cloudflare,
-    skills.Github_Actions,
-    skills.Vercel,
-    skills.Heroku,
-    skills.Netlify,
-    skills.NGINX,
-
-    skills.Tailwind,
-    skills.ShadCN,
-    skills.Redux,
-    skills.Vite,
-    skills.Chakra_UI,
-    skills.Material_UI,
-    skills.Radix_UI,
-    skills.Emotion,
-    skills.SWR,
-
-    skills.JWTs,
-    skills.OAuth,
-    skills.Zod,
-    skills.Vitest,
-    skills.HTMX,
-
-    skills.HTTP,
-    skills.Websockets,
-    skills.WebRTC,
-
-    skills.OOP,
-    skills.MVC,
-    skills.SOLID,
-
-    skills.HTML,
-    skills.CSS,
-    skills.NodeJS,
-    skills.Git,
-    skills.Linux,
-  ]),
-]
-
-export const roles = () => values.map(role => new Role(role.label, role.requirements))
-export const countRequirements = (label: string) => values.find(value => value.label === label)!.requirements.size
+export const RolesList = Object.values(Roles)
