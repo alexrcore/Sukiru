@@ -32,7 +32,7 @@ export const tools = [
   'Django',
   'Flask',
   'Laravel',
-  'Spring Boot',
+  'Spring Boot', // example: This is undefiend
   'Spring',
   '.Net',
   'FastAPI',
@@ -151,5 +151,5 @@ export const tools = [
   'Vitest',
 ] as const
 
-export const Tools = Object.fromEntries(tools.map(name => [name.replace(/\s|\+|\./g, '_'), new Tool(name)])) as Record<ToolKey, Tool>
+export const Tools = Object.fromEntries(tools.map(name => [name, new Tool(name)])) as Record<ToolKey, Tool>
 export const isTool = (key: string): key is ToolKey => tools.includes(key as ToolKey)

@@ -1,70 +1,69 @@
+import { MustHaveAll, MustHaveAtLeastOne } from '@/core/domain/pool.ts'
 import { Area } from '../domain/area.ts'
 import { Category } from '../domain/category.ts'
 import { Level, LevelName } from '../domain/level.ts'
-import { Pool } from '../domain/pool.ts'
 import { Role } from '../domain/role.ts'
 import { Tools } from './tools.ts'
 
 export const Roles = {
+  JavaScript_Kiddy: new Role('JavaScript Kiddy', [
+    new Level(LevelName.Junior, [
+      new Area(Category.Programming_Languages, new MustHaveAll(Tools.JavaScript), Tools.TypeScript),
+      new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React)),
+    ]),
+  ]),
+
   Backend_Developer: new Role('Backend Developer', [
     new Level(LevelName.Junior, [
-      new Area(Category.Backend_Framework, [new Pool(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)], []),
+      new Area(Category.Backend_Frameworks, new MustHaveAtLeastOne(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)),
 
-      new Area(Category.Frontend_Framework, [], [new Pool(Tools.React)]),
+      new Area(Category.Frontend_Frameworks, new MustHaveAll(), Tools.React, Tools.Next),
 
-      new Area(Category.Database, [new Pool(Tools.PostgreSQL, Tools.MySQL), new Pool(Tools.MongoDB), new Pool(Tools.SQL)], [new Pool(Tools.Redis)]),
+      new Area(Category.Databases, new MustHaveAll(Tools.SQL, Tools.PostgreSQL, Tools.MongoDB), Tools.MySQL, Tools.Redis, Tools.Firebase),
 
-      new Area(Category.CSS, [new Pool(Tools.CSS)], [new Pool(Tools.Tailwind)]),
+      new Area(Category.Styles, new MustHaveAll(Tools.HTML, Tools.CSS, Tools.JavaScript)),
 
-      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
+      new Area(Category.Protocols, new MustHaveAll(Tools.HTTP, Tools.WebSockets), Tools.GraphQL),
 
-      new Area(Category.Protocol, [new Pool(Tools.HTTP)], [new Pool(Tools.GraphQL), new Pool(Tools.WebSockets)]),
+      new Area(Category.DevOps_Tools, new MustHaveAll(Tools.Git), Tools.Docker),
 
-      new Area(Category.DevOps_Tool, [new Pool(Tools.Git)], [new Pool(Tools.Docker)]),
-
-      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel)], [new Pool(Tools.AWS, Tools['Google Cloud'], Tools.Azure)]),
-
-      new Area(Category.Architecture, [new Pool(Tools.MVC)], [new Pool(Tools.DDD)]),
+      new Area(Category.Architectures, new MustHaveAll(Tools.MVC, Tools.OOP)),
     ]),
 
     new Level(LevelName.Intermediate, [
-      new Area(Category.Backend_Framework, [new Pool(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)], []),
+      new Area(Category.Backend_Frameworks, new MustHaveAtLeastOne(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)),
 
-      new Area(Category.Frontend_Framework, [], [new Pool(Tools.React)]),
+      new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React), Tools.Next),
 
-      new Area(Category.Database, [new Pool(Tools.PostgreSQL, Tools.MySQL), new Pool(Tools.MongoDB), new Pool(Tools.SQL), new Pool(Tools.Redis)], []),
+      new Area(Category.Databases, new MustHaveAll(Tools.SQL, Tools.PostgreSQL, Tools.MongoDB, Tools.Redis, Tools.Firebase), Tools.MySQL),
 
-      new Area(Category.CSS, [new Pool(Tools.CSS)], [new Pool(Tools.Tailwind)]),
+      new Area(Category.Styles, new MustHaveAll(Tools.HTML, Tools.CSS, Tools.JavaScript)),
 
-      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
+      new Area(Category.Protocols, new MustHaveAll(Tools.HTTP, Tools.WebSockets, Tools.GraphQL), Tools.gRPC),
 
-      new Area(Category.Protocol, [new Pool(Tools.HTTP), new Pool(Tools.GraphQL), new Pool(Tools.WebSockets)], [new Pool(Tools.gRPC)]),
+      new Area(Category.DevOps_Tools, new MustHaveAll(Tools.Git, Tools.Docker), Tools.Kubernetes),
 
-      new Area(Category.DevOps_Tool, [new Pool(Tools.Git), new Pool(Tools.Docker)], [new Pool(Tools.Kubernetes)]),
+      new Area(Category.Cloud_Platforms, new MustHaveAtLeastOne(Tools.AWS, Tools['Google Cloud'], Tools.Azure)),
 
-      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel), new Pool(Tools.AWS, Tools['Google Cloud'], Tools.Azure)], []),
-
-      new Area(Category.Architecture, [new Pool(Tools.MVC), new Pool(Tools.DDD)], [new Pool(Tools.Microservices)]),
+      new Area(Category.Architectures, new MustHaveAll(Tools.MVC, Tools.OOP, Tools.DDD), Tools.SOLID, Tools.Microservices),
     ]),
   ]),
 
   Frontend_Developer: new Role('Frontend Developer', [
     new Level(LevelName.Junior, [
-      new Area(Category.Programming_Language, [new Pool(Tools.JavaScript)], [new Pool(Tools.TypeScript)]),
+      new Area(Category.Programming_Languages, new MustHaveAll(Tools.JavaScript), Tools.TypeScript),
 
-      new Area(Category.Frontend_Framework, [new Pool(Tools.React)], [new Pool(Tools.Vue, Tools.Next)]),
+      new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React), Tools.Next, Tools.Vue),
 
-      new Area(Category.CSS, [new Pool(Tools.CSS), new Pool(Tools.Tailwind)], []),
+      new Area(Category.Styles, new MustHaveAll(Tools.HTML, Tools.CSS, Tools.Tailwind)),
 
-      new Area(Category.HTML, [new Pool(Tools.HTML)], []),
+      new Area(Category.Protocols, new MustHaveAll(Tools.HTTP), Tools.WebSockets, Tools.GraphQL),
 
-      new Area(Category.Protocol, [new Pool(Tools.HTTP)], [new Pool(Tools.WebSockets, Tools.GraphQL)]),
+      new Area(Category.DevOps_Tools, new MustHaveAll(Tools.Git)),
 
-      new Area(Category.DevOps_Tool, [new Pool(Tools.Git)], []),
+      new Area(Category.Cloud_Platforms, new MustHaveAll(Tools.Vercel)),
 
-      new Area(Category.Cloud_Platform, [new Pool(Tools.Vercel)], []),
-
-      new Area(Category.UI_Library, [new Pool(Tools.ShadCN, Tools.Radix, Tools.Bootstrap)], [new Pool(Tools.Framer, Tools.GSAP)]),
+      new Area(Category.UI_Libraries, new MustHaveAtLeastOne(Tools.ShadCN, Tools.Radix, Tools.Bootstrap), Tools.Framer, Tools.GSAP),
     ]),
   ]),
 }

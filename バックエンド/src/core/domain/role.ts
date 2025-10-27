@@ -1,9 +1,10 @@
 import { Level, LevelAnalysis } from './level.ts'
 import { Tool } from './tool.ts'
 
-export type RolesAnalysis = {
+export type RoleAnalysis = {
   name: string
   analysis: LevelAnalysis[]
+  progress: number
 }
 
 export class Role {
@@ -15,7 +16,8 @@ export class Role {
     this.levels = levels
   }
 
-  analyze(tools: Tool[]): RolesAnalysis {
-    return { name: this.name, analysis: this.levels.map(level => level.analyze(tools)) }
+  analyze(tools: Set<Tool>) {
+    const analysis = this.levels.map(level => level.analyze(tools))
+    return { name: this.name, analysis, progress: analysis[analysis.length - 1].progress } satisfies RoleAnalysis
   }
 }

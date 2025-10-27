@@ -1,5 +1,5 @@
-import { Area, AreaAnalysis } from './area.ts'
 import { Tool } from './tool.ts'
+import { Area } from '@/core/domain/area.ts'
 
 export enum LevelName {
   Junior = 'Junior',
@@ -9,9 +9,11 @@ export enum LevelName {
 
 export type LevelAnalysis = {
   name: LevelName
-  analysis: AreaAnalysis[]
+  has: Tool[]
+  missing: Tool[]
+  good_to_have: Tool[]
   progress: number
-  bonus: number
+  points: number
 }
 
 export class Level {
@@ -23,10 +25,16 @@ export class Level {
     this.areas = areas
   }
 
-  analyze(tools: Tool[]): LevelAnalysis {
-    const analysis = this.areas.map(area => area.analyze(tools))
-    const progress = analysis.reduce((acc, cur) => acc + cur.progress, 0) / analysis.filter(a => a.analysis.essentials.length > 0).length
-    const bonus = analysis.reduce((acc, cur) => acc + cur.bonus, 0)
-    return { name: this.name, analysis, progress, bonus }
+  analyze(tools: Set<Tool>) {
+    const areasAnalysis = this.areas.map(area => area.analyze(tools))
+
+    return {
+      name: this.name,
+      has: areasAnalysis.map(area => area.has).flat(),
+      missing: areasAnalysis.map(area => area.missing).flat(),
+      good_to_have: areasAnalysis.map(area => area.good_to_have).flat(),
+      progress: (areasAnalysis.map(area => area.progress).reduce((acc, cur) => acc + cur, 0) / this.areas.length) * 100 || 0,
+      points: areasAnalysis.map(area => area.points).reduce((acc, cur) => acc + cur, 0),
+    } satisfies LevelAnalysis
   }
 }

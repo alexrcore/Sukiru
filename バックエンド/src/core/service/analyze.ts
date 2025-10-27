@@ -1,19 +1,21 @@
 import { RolesList } from '@/core/data/roles.ts'
-import { RolesAnalysis } from '@/core/domain/role.ts'
 import { Failure } from '@/lib/errors.ts'
 import { isTool, Tools } from '@/core/data/tools.ts'
+import { Tool } from '@/core/domain/tool.ts'
 
 type Input = {
   tools: string[]
 }
 
-export function analyze(input: Input): RolesAnalysis[] {
-  const tools = input.tools.map(tool => {
-    if (!isTool(tool)) {
-      throw new Failure(400, `Invalid tool: ${tool}!`)
-    }
-    return Tools[tool]
+export function analyze(input: Input) {
+  const tools = new Set<Tool>()
+
+  input.tools.forEach(tool => {
+    if (!isTool(tool)) throw new Failure(400, `Invalid tool: ${tool}!`)
+    tools.add(Tools[tool])
   })
 
-  return RolesList.map(role => role.analyze(tools))
+  console.log(tools)
+
+  return RolesList.map(role => role.analyze(tools)).sort((a, b) => b.progress - a.progress)
 }
