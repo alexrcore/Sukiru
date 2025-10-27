@@ -9,6 +9,7 @@ const JobList = () => {
         <JobCard title="Frontend Developer" percentage={75} missingSkills={['React', 'CSS']} />
         <JobCard title="Backend Developer" percentage={50} missingSkills={['Node.js', 'Express']} />
         <JobCard title="Full Stack Developer" percentage={60} missingSkills={['GraphQL', 'Docker']} />
+        <JobCard title="Full Stack Developer" percentage={60} missingSkills={['GraphQL', 'Docker']} />
       </div>
     </div>
   )

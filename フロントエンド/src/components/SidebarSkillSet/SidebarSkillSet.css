@@ -3,18 +3,7 @@
 }
 
 .skillset-sidebar {
-  flex: 1 1 0;
-  min-height: 0;
-  overflow-y: auto;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.skillset-sidebar h2 {
-  position: sticky;
-  top: 0;
+  padding: 0.5rem;
   background: var(--color-card-bg);
-  z-index: 1;
+  border-bottom: 2px solid var(--color-border);
 }
