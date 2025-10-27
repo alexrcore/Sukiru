@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import SkillSection from '../../components/SkillSection/SkillSection'
+import { getTools } from '../../api/tools'
+
 import './MainLayout.css'
 
 const ALL_SKILLS = [
@@ -117,12 +119,25 @@ const ALL_SKILLS = [
 const MainLayout = () => {
   const [selectedSkills, setSelectedSkills] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
+  const [skills, setSkills] = useState([])
+
+  useEffect(() => {
+    const fetchSkills = async () => {
+      try {
+        const tools = await getTools()
+        setSkills(tools)
+      } catch (err) {
+        console.error('Failed to fetch tools:', err)
+      }
+    }
+    fetchSkills()
+  }, [])
 
   const toggleSkill = skill => {
     setSelectedSkills(prev => (prev.includes(skill) ? prev.filter(s => s !== skill) : [...prev, skill]))
   }
 
-  const filteredSkills = ALL_SKILLS.filter(skill => skill.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredSkills = skills.filter(skill => skill.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
     <div className="main-layout">
