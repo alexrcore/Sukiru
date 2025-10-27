@@ -1,4 +1,4 @@
-import { RolesList } from '@/core/data/roles.ts'
+import { Roles } from '@/core/data/roles.ts'
 import { Failure } from '@/lib/errors.ts'
 import { isTool, Tools } from '@/core/data/tools.ts'
 import { Tool } from '@/core/domain/tool.ts'
@@ -15,7 +15,5 @@ export function analyze(input: Input) {
     tools.add(Tools[tool])
   })
 
-  console.log(tools)
-
-  return RolesList.map(role => role.analyze(tools)).sort((a, b) => b.progress - a.progress)
+  return Roles.map(role => role.analyze(tools)).sort((a, b) => b.progress - a.progress)
 }

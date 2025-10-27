@@ -1,23 +1,34 @@
-import { Level, LevelAnalysis } from './level.ts'
 import { Tool } from './tool.ts'
+import { Area } from '@/core/domain/area.ts'
 
 export type RoleAnalysis = {
   name: string
-  analysis: LevelAnalysis[]
+  has: Tool[]
+  missing: Tool[]
+  good_to_have: Tool[]
   progress: number
+  points: number
 }
 
 export class Role {
   private name: string
-  private levels: Level[]
+  private areas: Area[]
 
-  constructor(name: string, levels: Level[]) {
+  constructor(name: string, areas: Area[]) {
     this.name = name
-    this.levels = levels
+    this.areas = areas
   }
 
   analyze(tools: Set<Tool>) {
-    const analysis = this.levels.map(level => level.analyze(tools))
-    return { name: this.name, analysis, progress: analysis[analysis.length - 1].progress } satisfies RoleAnalysis
+    const areasAnalysis = this.areas.map(area => area.analyze(tools))
+
+    return {
+      name: this.name,
+      has: areasAnalysis.map(area => area.has).flat(),
+      missing: areasAnalysis.map(area => area.missing).flat(),
+      good_to_have: areasAnalysis.map(area => area.good_to_have).flat(),
+      progress: (areasAnalysis.map(area => area.progress).reduce((acc, cur) => acc + cur, 0) / this.areas.length) * 100 || 0,
+      points: areasAnalysis.map(area => area.points).reduce((acc, cur) => acc + cur, 0),
+    } satisfies RoleAnalysis
   }
 }

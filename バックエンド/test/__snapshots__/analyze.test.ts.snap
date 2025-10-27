@@ -3,439 +3,421 @@
 exports[`Analyze > Valid inputs 1`] = `
 [
   {
-    "analysis": [
-      {
-        "good_to_have": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Laravel",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Spring Boot",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Django",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Go",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "React",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Next",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MySQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Redis",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Firebase",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "GraphQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Docker",
-          },
-        ],
-        "has": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Express",
-          },
-        ],
-        "missing": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "SQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "PostgreSQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MongoDB",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTML",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "CSS",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "JavaScript",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTTP",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "WebSockets",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Git",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MVC",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "OOP",
-          },
-        ],
-        "name": "Junior",
-        "points": 1,
-        "progress": 14.285714285714285,
+    "good_to_have": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Laravel",
       },
-      {
-        "good_to_have": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Laravel",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Spring Boot",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Django",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Go",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Next",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MySQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "gRPC",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Kubernetes",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "SOLID",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Microservices",
-          },
-        ],
-        "has": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Express",
-          },
-        ],
-        "missing": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "React",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "SQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "PostgreSQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MongoDB",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Redis",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Firebase",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTML",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "CSS",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "JavaScript",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTTP",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "WebSockets",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "GraphQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Git",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Docker",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "AWS",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Google Cloud",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Azure",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "MVC",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "OOP",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "DDD",
-          },
-        ],
-        "name": "Intermediate",
-        "points": 1,
-        "progress": 12.5,
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Spring Boot",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Django",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Go",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "React",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Next",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MySQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Redis",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Firebase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Docker",
       },
     ],
-    "name": "Backend Developer",
+    "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Express",
+      },
+    ],
+    "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "SQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "PostgreSQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MongoDB",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTML",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CSS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTTP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "WebSockets",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Git",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MVC",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "OOP",
+      },
+    ],
+    "name": "Junior Backend Developer",
+    "points": 1,
+    "progress": 14.285714285714285,
+  },
+  {
+    "good_to_have": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Laravel",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Spring Boot",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Django",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Go",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Next",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MySQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "gRPC",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Kubernetes",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "SOLID",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Microservices",
+      },
+    ],
+    "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Express",
+      },
+    ],
+    "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "React",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "SQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "PostgreSQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MongoDB",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Redis",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Firebase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTML",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CSS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTTP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "WebSockets",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Git",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Docker",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "AWS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Google Cloud",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Azure",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MVC",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "OOP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "DDD",
+      },
+    ],
+    "name": "Intermediate Backend Developer",
+    "points": 1,
     "progress": 12.5,
   },
   {
-    "analysis": [
-      {
-        "good_to_have": [],
-        "has": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "TypeScript",
-          },
-        ],
-        "missing": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "JavaScript",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "React",
-          },
-        ],
-        "name": "Junior",
-        "points": 1,
-        "progress": 0,
+    "good_to_have": [],
+    "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "TypeScript",
+      },
+    ],
+    "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "React",
       },
     ],
     "name": "JavaScript Kiddy",
+    "points": 1,
     "progress": 0,
   },
   {
-    "analysis": [
-      {
-        "good_to_have": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Next",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Vue",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "WebSockets",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "GraphQL",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Framer",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "GSAP",
-          },
-        ],
-        "has": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "TypeScript",
-          },
-        ],
-        "missing": [
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "JavaScript",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "React",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTML",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "CSS",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Tailwind",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "HTTP",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Git",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Vercel",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "ShadCN",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Radix",
-          },
-          Tool {
-            "description": undefined,
-            "logo": undefined,
-            "name": "Bootstrap",
-          },
-        ],
-        "name": "Junior",
-        "points": 1,
-        "progress": 0,
+    "good_to_have": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Next",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Vue",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "WebSockets",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Framer",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GSAP",
       },
     ],
-    "name": "Frontend Developer",
+    "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "TypeScript",
+      },
+    ],
+    "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "React",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTML",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CSS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Tailwind",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTTP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Git",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Vercel",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "ShadCN",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Radix",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Bootstrap",
+      },
+    ],
+    "name": "Junior Frontend Developer",
+    "points": 1,
     "progress": 0,
   },
 ]
