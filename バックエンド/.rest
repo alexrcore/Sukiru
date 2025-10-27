@@ -1,3 +1,4 @@
+###
 POST http://localhost:8080/
 Content-Type: application/json
 
@@ -6,3 +7,6 @@ Content-Type: application/json
         "JavaScript", "Express"
     ]
 }
+
+###
+GET http://localhost:8080/

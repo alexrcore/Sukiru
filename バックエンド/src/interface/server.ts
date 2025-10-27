@@ -6,11 +6,14 @@ import { handleFailure } from '@/interface/middlewares/failure.ts'
 import { handle404 } from '@/interface/middlewares/404.ts'
 import { handleJSON } from '@/interface/middlewares/json.ts'
 import { getSkillsHandler } from '@/interface/handlers/tools.ts'
+import { applyCors } from '@/interface/middlewares/cors.ts'
 
 export function bootstrap(options: ServerOptions) {
   const app = express()
 
   app.use(handleJSON())
+
+  app.use(applyCors(options.clientUrl))
 
   app.get('/', getSkillsHandler)
   app.post('/', analyzeHandler)

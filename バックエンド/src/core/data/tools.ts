@@ -122,7 +122,6 @@ export const tools = [
   'gRPC',
   'Thrift',
   'GraphQL',
-  'gRPC',
   'WebRTC',
   'tRPC',
   'QUIC',
@@ -141,7 +140,6 @@ export const tools = [
 
   // Style Language
   'CSS',
-  'Tailwind',
 
   // Utility
   'Prisma',
