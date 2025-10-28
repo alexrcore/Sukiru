@@ -1,14 +1,14 @@
-import SkillTag from '../SkillTag/SkillTag'
+import { SkillTag } from '../SkillTag'
 import './SkillGrid.css'
 
-const SkillGrid = ({ skills, selectedSkills, onToggleSkill }) => {
+export function SkillGrid({ skills, selectedSkills, onToggleSkill }) {
+  skills = skills.sort(() => Math.random() - 0.5).slice(0, 25)
+
   return (
     <div className="skill-grid">
       {skills.map(skill => (
-        <SkillTag key={skill} label={skill} active={selectedSkills.includes(skill)} onClick={() => onToggleSkill(skill)} />
+        <SkillTag key={skill} label={skill} state={selectedSkills.includes(skill) ? 'selected' : ''} onClick={() => onToggleSkill(skill)} />
       ))}
     </div>
   )
 }
-
-export default SkillGrid

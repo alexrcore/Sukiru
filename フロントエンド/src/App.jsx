@@ -1,4 +1,4 @@
-import MainLayout from './layouts/MainLayout/MainLayout'
+import MainLayout from './layouts/MainLayout'
 
 export default function App() {
   const savedTheme = localStorage.getItem('theme')

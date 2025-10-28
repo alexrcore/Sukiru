@@ -1,9 +1,0 @@
-.empty-note {
-  color: var(--color-subtext);
-}
-
-.skillset-sidebar {
-  padding: 0.5rem;
-  background: var(--color-card-bg);
-  border-bottom: 2px solid var(--color-border);
-}

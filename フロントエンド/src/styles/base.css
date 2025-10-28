@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 @import 'tailwindcss';
 @import './variables.css';
 
+@theme {
+  --text-base: 1rem;
+  --spacing: 0.25rem;
+
+  --font-anta: 'Anta', sans-serif;
+  --font-audiowide: 'Audiowide', 'Anta', sans-serif;
+  --font-oxanium: 'Oxanium', sans-serif;
+
+  --default-border-width: 1px;
+
+  --color-dark-smoke: #2e2e3e;
+  --color-dark-cloud: #1a1a22;
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,15 +27,11 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
 body {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-base);
-  line-height: 1.6;
+  font-family: var(--font-anta);
+  font-size: var(--text-base);
   color: var(--color-text);
   background-color: var(--color-bg);
-  transition: background 0.3s color 0.3s;
-  min-height: 100vh;
 }
 
 a {
