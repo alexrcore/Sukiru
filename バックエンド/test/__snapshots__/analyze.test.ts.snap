@@ -315,31 +315,6 @@ exports[`Analyze > Valid inputs 1`] = `
     "progress": 12.5,
   },
   {
-    "good_to_have": [],
-    "has": [
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "TypeScript",
-      },
-    ],
-    "missing": [
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "JavaScript",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "React",
-      },
-    ],
-    "name": "JavaScript Kiddy",
-    "points": 1,
-    "progress": 0,
-  },
-  {
     "good_to_have": [
       Tool {
         "description": undefined,
@@ -354,12 +329,7 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "WebSockets",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "GraphQL",
+        "name": "Angular",
       },
       Tool {
         "description": undefined,
@@ -370,6 +340,21 @@ exports[`Analyze > Valid inputs 1`] = `
         "description": undefined,
         "logo": undefined,
         "name": "GSAP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "WebSockets",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Zustand",
       },
     ],
     "has": [
@@ -408,6 +393,21 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "ShadCN",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Radix",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Bootstrap",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "HTTP",
       },
       Tool {
@@ -423,17 +423,17 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "ShadCN",
+        "name": "Redux",
       },
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "Radix",
+        "name": "React Query",
       },
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "Bootstrap",
+        "name": "Zod",
       },
     ],
     "name": "Junior Frontend Developer",

@@ -5,11 +5,6 @@ import { MustHaveAll, MustHaveAtLeastOne } from '@/core/domain/pool.ts'
 import { Tools } from '@/core/data/tools.ts'
 
 export const Roles = [
-  new Role('JavaScript Kiddy', [
-    new Area(Category.Programming_Languages, new MustHaveAll(Tools.JavaScript), Tools.TypeScript),
-    new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React)),
-  ]),
-
   new Role('Junior Backend Developer', [
     new Area(Category.Programming_Languages, new MustHaveAtLeastOne(Tools.JavaScript, Tools.PHP, Tools.Java, Tools.Python)),
 
@@ -49,9 +44,11 @@ export const Roles = [
   new Role('Junior Frontend Developer', [
     new Area(Category.Programming_Languages, new MustHaveAll(Tools.JavaScript), Tools.TypeScript),
 
-    new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React), Tools.Next, Tools.Vue),
+    new Area(Category.Frontend_Frameworks, new MustHaveAll(Tools.React), Tools.Next, Tools.Vue, Tools.Angular),
 
     new Area(Category.Styles, new MustHaveAll(Tools.HTML, Tools.CSS, Tools.Tailwind)),
+
+    new Area(Category.UI_Libraries, new MustHaveAtLeastOne(Tools.ShadCN, Tools.Radix, Tools.Bootstrap), Tools.Framer, Tools.GSAP),
 
     new Area(Category.Protocols, new MustHaveAll(Tools.HTTP), Tools.WebSockets, Tools.GraphQL),
 
@@ -59,6 +56,8 @@ export const Roles = [
 
     new Area(Category.Cloud_Platforms, new MustHaveAll(Tools.Vercel)),
 
-    new Area(Category.UI_Libraries, new MustHaveAtLeastOne(Tools.ShadCN, Tools.Radix, Tools.Bootstrap), Tools.Framer, Tools.GSAP),
+    new Area(Category.State_Management, new MustHaveAll(Tools.Redux, Tools['React Query']), Tools.Zustand),
+
+    new Area(Category.Libraries, new MustHaveAll(Tools.Zod)),
   ]),
 ]

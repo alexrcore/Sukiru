@@ -15,5 +15,5 @@ export function analyze(input: Input) {
     tools.add(Tools[tool])
   })
 
-  return Roles.map(role => role.analyze(tools)).sort((a, b) => b.progress - a.progress)
+  return Roles.map(role => role.analyze(tools)).sort((a, b) => (b.progress === a.progress ? b.points - a.points : b.progress - a.progress))
 }

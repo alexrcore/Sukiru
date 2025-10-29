@@ -61,10 +61,17 @@ export const tools = [
   'GSAP',
   'Bootstrap',
   'Tailwind',
-  'Redux',
   'Chakra UI',
   'Material UI',
   'Emotion',
+
+  // Libraries
+  'Zod',
+
+  // State Management
+  'Redux',
+  'Zustand',
+  'React Query',
 
   // Database
   'MongoDB',

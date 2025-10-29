@@ -9,4 +9,7 @@ export enum Category {
   Databases = 'Databases',
   DevOps_Tools = 'DevOps Tools',
   Styles = 'Styles',
+  State_Management = 'State Management',
+  Libraries = 'Libraries',
+  Performance_Optimization = 'Performance Optimization',
 }
