@@ -15,6 +15,7 @@
 
   --default-border-width: 1px;
 
+  --color-void: #0e0e12;
   --color-dark-smoke: #2e2e3e;
   --color-dark-cloud: #1a1a22;
 }
@@ -31,7 +32,7 @@ body {
   font-family: var(--font-anta);
   font-size: var(--text-base);
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-void);
 }
 
 a {

@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Sidebar } from '@/components/Sidebar'
-import { Wall } from '@/components/wall'
-import { Footer } from '@/components/global/footer'
-import { Header } from '@/components/global/header'
+import { Wall } from '@/components/Wall'
+import { Footer } from '@/components/Footer'
 
 export default function MainLayout() {
   const [selectedSkills, setSelectedSkills] = useState([])
@@ -10,11 +9,11 @@ export default function MainLayout() {
   const toggleSkill = skill => setSelectedSkills(prev => (prev.includes(skill) ? prev.filter(s => s !== skill) : [...prev, skill]))
 
   return (
-    <section className="grid grid-cols-[1fr_2fr] grid-rows-[auto_auto_5rem] h-screen border border-dark-smoke">
-      <Header />
+    <section className="relative grid lg:grid-cols-[4fr_6fr] lg:grid-rows-[auto_5rem]">
       <Wall selectedSkills={selectedSkills} toggleSkill={toggleSkill} />
       <Sidebar selectedSkills={selectedSkills} toggleSkill={toggleSkill} />
       <Footer />
+      <div className="absolute inset-0 col-start-2 bg-center pointer-events-none" style={{ backgroundImage: `url('/yuta-1.png')` }}></div>
     </section>
   )
 }

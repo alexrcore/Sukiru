@@ -18,11 +18,11 @@ export function SkillTag({ label, onClick, state }) {
   }[state] || {
     border: 'border-dark-smoke',
     text: '',
-    bg: 'bg-dark-smoke/10',
+    bg: 'bg-void/80',
   }
 
   return (
-    <button className={`${colors.border} ${colors.bg} py-1 px-4 border rounded-xl transition-transform duration-200 hover:scale-105`} onClick={onClick}>
+    <button className={`${colors.border} ${colors.bg} py-1 px-4 border-2 rounded-xl transition-transform duration-200 hover:scale-105`} onClick={onClick}>
       <p className={colors.text}>{label}</p>
     </button>
   )
