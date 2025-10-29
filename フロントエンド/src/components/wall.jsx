@@ -31,10 +31,12 @@ export function Wall({ selectedSkills, toggleSkill }) {
 function Hero() {
   return (
     <header className="text-center pt-25 lg:col-start-2 lg:row-start-1 space-y-1">
-      <h1 className="text-6xl lg:text-7xl text-wrap font-audiowide">
-        Sukiru - <spane className="font-semibold">スキル</spane>
+      <h1 className="text-8xl lg:text-7xl break-keep font-audiowide">
+        Sukiru - <span className="font-semibold">スキル</span>
       </h1>
-      <p className="text-lg">Discover how far you are from reaching your dream developer job!</p>
+      <p className="text-lg">
+        Discover how far you are from reaching your dream <span className="text-purple-500">developer</span> job!
+      </p>
     </header>
   )
 }

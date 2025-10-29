@@ -3,7 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 @import 'tailwindcss';
-@import './variables.css';
+
+:root {
+  --milky-way: #e3d6f8;
+  --void: #0e0e12;
+  --dark-smoke: #2e2e3e;
+  --dark-cloud: #1a1a22;
+}
 
 @theme {
   --text-base: 1rem;
@@ -15,9 +21,10 @@
 
   --default-border-width: 1px;
 
-  --color-void: #0e0e12;
-  --color-dark-smoke: #2e2e3e;
-  --color-dark-cloud: #1a1a22;
+  --color-milky-way: var(--milky-way);
+  --color-void: var(--void);
+  --color-dark-smoke: var(--dark-smoke);
+  --color-dark-cloud: var(--dark-cloud);
 }
 
 * {
@@ -31,8 +38,8 @@ html {
 body {
   font-family: var(--font-anta);
   font-size: var(--text-base);
-  color: var(--color-text);
-  background-color: var(--color-void);
+  color: var(--color-milky-way);
+  background-color: var(--color-dark-smoke);
 }
 
 a {
