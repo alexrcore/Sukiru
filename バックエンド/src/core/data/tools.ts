@@ -26,15 +26,14 @@ export const tools = [
   'Haskell',
 
   // Backend Framework
-  'Node',
   'Express',
   'Nest',
   'Django',
   'Flask',
   'Laravel',
-  'Spring Boot', // example: This is undefiend
+  'Spring Boot',
   'Spring',
-  '.Net',
+  '.NET',
   'FastAPI',
 
   // Frontend Framework
@@ -65,9 +64,6 @@ export const tools = [
   'Material UI',
   'Emotion',
 
-  // Libraries
-  'Zod',
-
   // State Management
   'Redux',
   'Zustand',
@@ -86,6 +82,8 @@ export const tools = [
   'DynamoDB',
   'Neo4j',
   'Supabase',
+  'S3',
+  'Cloudinary',
 
   // Architecture
   'MVC',
@@ -111,6 +109,8 @@ export const tools = [
   'NGINX',
   'ArgoCD',
   'Prometheus',
+  'Vite',
+  'Webpack',
 
   // Cloud Platform
   'AWS',
@@ -122,6 +122,7 @@ export const tools = [
   'Cloudflare',
   'Heroku',
   'Digital Ocean',
+  'Render',
 
   // Protocol
   'HTTP',
@@ -136,11 +137,14 @@ export const tools = [
   // Message broker
   'RabbitMQ',
   'Kafka',
-  'Google PubSub',
+  'PubSub',
 
-  // Authentication
+  // Security
   'JWTs',
   'OAuth',
+  'bcrypt',
+  'CORS',
+  'Helmet',
 
   // Markup Language
   'HTML',
@@ -154,6 +158,7 @@ export const tools = [
   'Zod',
   'Jest',
   'Vitest',
+  'UUID',
 ] as const
 
 export const Tools = Object.fromEntries(tools.map(name => [name, new Tool(name)])) as Record<ToolKey, Tool>

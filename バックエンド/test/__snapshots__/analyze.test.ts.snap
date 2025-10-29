@@ -7,22 +7,12 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "Laravel",
+        "name": "JavaScript",
       },
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "Spring Boot",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Django",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "React",
+        "name": "Nest",
       },
       Tool {
         "description": undefined,
@@ -32,153 +22,32 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "MySQL",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Redis",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Firebase",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "GraphQL",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Docker",
-      },
-    ],
-    "has": [
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Express",
-      },
-    ],
-    "missing": [
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "JavaScript",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "PHP",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Java",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Python",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "SQL",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "PostgreSQL",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "MongoDB",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "HTML",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "CSS",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "JavaScript",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "HTTP",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "WebSockets",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Git",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "MVC",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "OOP",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "RESTful",
-      },
-    ],
-    "name": "Junior Backend Developer",
-    "points": 1,
-    "progress": 14.285714285714285,
-  },
-  {
-    "good_to_have": [
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Laravel",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Spring Boot",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Django",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Go",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
-        "name": "Next",
+        "name": "S3",
       },
       Tool {
         "description": undefined,
         "logo": undefined,
         "name": "MySQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Supabase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MariaDB",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Cassandra",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "DynamoDB",
       },
       Tool {
         "description": undefined,
@@ -193,6 +62,11 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "NGINX",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "SOLID",
       },
       Tool {
@@ -200,8 +74,18 @@ exports[`Analyze > Valid inputs 1`] = `
         "logo": undefined,
         "name": "Microservices",
       },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Prisma",
+      },
     ],
     "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "TypeScript",
+      },
       Tool {
         "description": undefined,
         "logo": undefined,
@@ -242,6 +126,11 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "Cloudinary",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "HTML",
       },
       Tool {
@@ -272,7 +161,17 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "PubSub",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "Git",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Github Actions",
       },
       Tool {
         "description": undefined,
@@ -297,6 +196,41 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "JWTs",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "OAuth",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "bcrypt",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CORS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Helmet",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Vitest",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Jest",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "MVC",
       },
       Tool {
@@ -309,10 +243,236 @@ exports[`Analyze > Valid inputs 1`] = `
         "logo": undefined,
         "name": "DDD",
       },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "ACID",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "RESTful",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Zod",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Swagger",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "UUID",
+      },
     ],
-    "name": "Intermediate Backend Developer",
-    "points": 1,
-    "progress": 12.5,
+    "name": "Intermediate Backend Developer - JavaScript",
+    "points": 2,
+    "progress": 16.666666666666664,
+  },
+  {
+    "good_to_have": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Nest",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "React",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Next",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MySQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Redis",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Firebase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Supabase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Docker",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "OAuth",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Prisma",
+      },
+    ],
+    "has": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "TypeScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Express",
+      },
+    ],
+    "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "SQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "PostgreSQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MongoDB",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Cloudinary",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTML",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CSS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "HTTP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "WebSockets",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Git",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Heroku",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Vercel",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JWTs",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "bcrypt",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "CORS",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Helmet",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "MVC",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "OOP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "RESTful",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Vitest",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Jest",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Zod",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Swagger",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "UUID",
+      },
+    ],
+    "name": "Junior Backend Developer - JavaScript",
+    "points": 2,
+    "progress": 13.636363636363635,
   },
   {
     "good_to_have": [
@@ -344,12 +504,32 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "MongoDB",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "PostgreSQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Firebase",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "WebSockets",
       },
       Tool {
         "description": undefined,
         "logo": undefined,
         "name": "GraphQL",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Webpack",
       },
       Tool {
         "description": undefined,
@@ -418,7 +598,22 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
+        "name": "Vite",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
         "name": "Vercel",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Netlify",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Render",
       },
       Tool {
         "description": undefined,

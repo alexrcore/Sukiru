@@ -12,4 +12,6 @@ export enum Category {
   State_Management = 'State Management',
   Libraries = 'Libraries',
   Performance_Optimization = 'Performance Optimization',
+  Testing = 'Testing',
+  Security = 'Security',
 }
