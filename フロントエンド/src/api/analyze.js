@@ -1,5 +1,5 @@
 export async function analyze(tools) {
-  return fetch('http://localhost:8080/', {
+  return fetch(import.meta.env.VITE_SERVER_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ tools }),

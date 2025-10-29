@@ -1,5 +1,5 @@
 export async function getTools() {
-  return fetch('http://localhost:8080/')
+  return fetch(import.meta.env.VITE_SERVER_URL)
     .catch(() => {
       throw new Error(`HTTP error!`)
     })

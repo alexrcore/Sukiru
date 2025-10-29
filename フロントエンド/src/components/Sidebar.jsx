@@ -13,7 +13,7 @@ export function Sidebar({ selectedSkills, toggleSkill }) {
 
   function SkillSet() {
     return (
-      <section className="border-b-2 border-dark-smoke p-4 space-y-2 max-h-1/3 overflow-y-auto">
+      <section className="border-b-2 border-dark-smoke p-4 space-y-2 lg:max-h-1/3 overflow-y-auto">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl">Your Skills</h2>
           <h4 className="mr-4">{selectedSkills.length}pt</h4>
