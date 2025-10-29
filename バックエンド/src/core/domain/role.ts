@@ -27,7 +27,10 @@ export class Role {
       has: areasAnalysis.map(area => area.has).flat(),
       missing: areasAnalysis.map(area => area.missing).flat(),
       good_to_have: areasAnalysis.map(area => area.good_to_have).flat(),
-      progress: (areasAnalysis.map(area => area.progress).reduce((acc, cur) => acc + cur, 0) / this.areas.length) * 100 || 0,
+      progress:
+        (areasAnalysis.map(area => area.progress).reduce((acc, cur) => acc + cur, 0) /
+          this.areas.reduce((acc, cur) => acc + (cur.essentials.tools.length ? 1 : 0), 0)) *
+          100 || 0,
       points: areasAnalysis.map(area => area.points).reduce((acc, cur) => acc + cur, 0),
     } satisfies RoleAnalysis
   }

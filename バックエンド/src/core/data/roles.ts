@@ -11,7 +11,9 @@ export const Roles = [
   ]),
 
   new Role('Junior Backend Developer', [
-    new Area(Category.Backend_Frameworks, new MustHaveAtLeastOne(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django, Tools.Go)),
+    new Area(Category.Programming_Languages, new MustHaveAtLeastOne(Tools.JavaScript, Tools.PHP, Tools.Java, Tools.Python)),
+
+    new Area(Category.Backend_Frameworks, new MustHaveAtLeastOne(Tools.Express, Tools.Laravel, Tools['Spring Boot'], Tools.Django)),
 
     new Area(Category.Frontend_Frameworks, new MustHaveAll(), Tools.React, Tools.Next),
 
@@ -23,7 +25,7 @@ export const Roles = [
 
     new Area(Category.DevOps_Tools, new MustHaveAll(Tools.Git), Tools.Docker),
 
-    new Area(Category.Architectures, new MustHaveAll(Tools.MVC, Tools.OOP)),
+    new Area(Category.Architectures, new MustHaveAll(Tools.MVC, Tools.OOP, Tools.RESTful)),
   ]),
 
   new Role('Intermediate Backend Developer', [

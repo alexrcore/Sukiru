@@ -13,7 +13,7 @@ export type AreaAnalysis = {
 
 export class Area {
   private name: Category
-  private essentials: Pool
+  essentials: Pool
   private optionals: Pool
 
   constructor(name: Category, essentials: Pool, ...optionals: Tool[]) {

@@ -22,11 +22,6 @@ exports[`Analyze > Valid inputs 1`] = `
       Tool {
         "description": undefined,
         "logo": undefined,
-        "name": "Go",
-      },
-      Tool {
-        "description": undefined,
-        "logo": undefined,
         "name": "React",
       },
       Tool {
@@ -68,6 +63,26 @@ exports[`Analyze > Valid inputs 1`] = `
       },
     ],
     "missing": [
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "JavaScript",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "PHP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Java",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "Python",
+      },
       Tool {
         "description": undefined,
         "logo": undefined,
@@ -122,6 +137,11 @@ exports[`Analyze > Valid inputs 1`] = `
         "description": undefined,
         "logo": undefined,
         "name": "OOP",
+      },
+      Tool {
+        "description": undefined,
+        "logo": undefined,
+        "name": "RESTful",
       },
     ],
     "name": "Junior Backend Developer",
