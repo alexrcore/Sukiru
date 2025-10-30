@@ -5,7 +5,7 @@ import { RoleCard } from '@/components/RoleCard.jsx'
 
 export function Sidebar({ selectedSkills, toggleSkill }) {
   return (
-    <aside className="bg-dark-cloud lg:border-r-2 border-dark-smoke lg:row-start-1 lg:row-span-2 lg:h-[calc(100vh-3px)] flex flex-col">
+    <aside className="bg-dark-cloud border-t-2 lg:border-t-0 lg:border-r-2 border-dark-smoke lg:row-start-1 lg:row-span-2 lg:h-[calc(100vh-3px)] flex flex-col">
       <SkillSet />
       <JobList />
     </aside>

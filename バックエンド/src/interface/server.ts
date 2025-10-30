@@ -11,9 +11,9 @@ import { applyCors } from '@/interface/middlewares/cors.ts'
 export function bootstrap(options: ServerOptions) {
   const app = express()
 
-  app.use(handleJSON())
-
   app.use(applyCors(options.clientUrl))
+
+  app.use(handleJSON())
 
   app.get('/', getSkillsHandler)
   app.post('/', analyzeHandler)
