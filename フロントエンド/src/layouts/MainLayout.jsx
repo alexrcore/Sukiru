@@ -15,7 +15,7 @@ export default function MainLayout() {
       <Footer />
       <div
         className="absolute inset-0 row-end-2 lg:row-auto lg:col-start-2 bg-center pointer-events-none"
-        style={{ backgroundImage: `url('/yuta-1.png')` }}
+        style={{ backgroundImage: `url('/background.png')` }}
       ></div>
     </section>
   )
