@@ -29,24 +29,23 @@ export function Sidebar({ selectedSkills, toggleSkill }) {
 
   function JobList() {
     const [jobs, setJobs] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
-      const fetchJobs = async () => {
-        try {
-          const data = await analyze(selectedSkills)
-          setJobs(data)
-        } catch (err) {
-          console.error('Failed to analyze:', err)
-        }
-      }
-      fetchJobs()
-    }, [])
+      setIsLoading(true)
+      analyze(selectedSkills)
+        .then(setJobs)
+        .catch(err => console.error('Failed to analyze:', err))
+        .finally(() => setIsLoading(false))
+    }, [selectedSkills])
 
     return (
       <section className="p-3 flex-1 overflow-y-auto m-1">
         <h2 className="text-2xl pb-2">Your Roles</h2>
         <div className="space-y-2">
-          {!jobs.length ? (
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : !jobs.length ? (
             <p>No roles found yet.</p>
           ) : (
             jobs.map(job => (
