@@ -33,17 +33,17 @@ jobs:
         run: npx eslint .
 
       - name: 📦 Install backend deps
-        working-directory: バックエンド
+        working-directory: backend
         run: npm ci
 
       - name: 🧠 Run ESLint
-        working-directory: バックエンド
+        working-directory: backend
         run: npx eslint .
 
       - name: 🔍 Type check
-        working-directory: バックエンド
+        working-directory: backend
         run: npx tsc --noEmit
 
       - name: 🧪 Run Tests
-        working-directory: バックエンド
+        working-directory: backend
         run: npx vitest run --update false
